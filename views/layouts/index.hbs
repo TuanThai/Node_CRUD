@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MY APP</title>
+</head>
+
+<body>
+  <h1> ATN COMPANY </h1>
+    <h2>Users:</h2>
+  {{{body}}}
+  <h2>Add a user:</h2>
+  <div>
+    <form action="/users" method="POST">
+      <input type="text" placeholder="username" name="username">
+      <input type="text" placeholder="password" name="password">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div>
+    <h2>Change user password:</h2>
+    <p>
+      Change tmtuan's password with 'tuan thai'
+    </p>
+    <button id="update-button">Change tmtuan's password</button>
+  </div>
+  <div>
+    <h2>Remove a user:</h2>
+    <p>
+     Remove tmtuan
+    </p>
+    <button id="delete-button">Delete tmtuan</button>
+  </div>
+  <script src="/main.js"></script>
+</body>
+
+</html>
